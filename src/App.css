@@ -52,6 +52,12 @@
 .App .whole .blur{
   height: calc(100vh - 70px);
   z-index: -1;
+  transition: all 0.2s ease;
+}
+
+.App .whole .blur:hover{
+  transform: translate(30px);
+  transition: all 0.2s ease;
 }
 
 .App .content{
