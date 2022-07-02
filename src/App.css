@@ -1,24 +1,86 @@
+@font-face {
+  font-family: "NewFont";
+  src: url("./assets/fonts/Hellix-SemiBold.woff") format('woff');
+}
+
 .App{
-  height: 100vh;
+  font-family: 'NewFont', sans-serif;
   width: 100%;
-  background: #212121;
+  background: #101010;
   color:white;
-  display: flex;
-  align-items: center;
 }
 
-.App > *{
-  flex: 1;
-}
-
-.App .blurred{
-  /* background: white; */
+.App nav{
+  height: 60px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(57, 57, 57);
+}
+
+.App nav .logo{
+  height: 60px;
+}
+
+.App nav .button{
+  font-family: 'NewFont', sans-serif;
+  color:white;
+  background: #101010;
+  padding:10px 15px;
+  border:1px solid gray;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.App nav .button:hover{
+  color:#101010;
+  background: white;
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+}
+
+.App .content{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 0 60px;
 }
 
-.App .blurred img{
-  height: 60vh;
-  /* filter: blur(5px); */
+.App .content h1{
+  font-size: 90px;
+  line-height: 90%;
+  margin-bottom: 40px;
+}
+
+.App .content p{
+  font-size: 18px;
+  color:#9c9c9c;
+  font-family: sans-serif;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+
+.App .content .button{
+  font-family: 'NewFont', sans-serif;
+  font-size: 18px;
+  max-width: 200px;
+  color:#101010;
+  line-height: 140%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.App .content .button:hover{
+  color:white;
+  background: #101010;
+  transition: all 0.2s ease;
+  transform: scale(1.05);
 }
