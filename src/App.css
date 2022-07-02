@@ -4,10 +4,21 @@
 }
 
 .App{
+  position: relative;
+  overflow-x: hidden;
   font-family: 'NewFont', sans-serif;
   width: 100%;
-  background: #000000;
   color:white;
+}
+
+::moz-selection {
+	color: #000000;
+	background-color: rgba(0, 255, 0, 0.36);
+}
+
+::selection {
+  background-color: rgba(0, 255, 0, 0.36);
+  color: white;
 }
 
 .App nav{
@@ -100,4 +111,40 @@
   background: #000000;
   transition: all 0.2s ease;
   transform: scale(1.05);
+}
+
+@media screen and (max-width:1000px) {
+  .App .content h1{
+    font-size: 60px;
+  } 
+}
+
+
+@media screen and (max-width:800px) {
+  .App .content h1{
+    font-size: 50px;
+  } 
+  
+  .App .whole{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App .whole .blur{
+    position: absolute;
+    top:0;
+    left:0;
+  }
+}
+
+@media screen and (max-width:600px){
+  .App .content{
+    padding: 0 8%;
+  }
+
+  br{
+    display: none;
+  }
 }
