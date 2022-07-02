@@ -6,7 +6,7 @@
 .App{
   font-family: 'NewFont', sans-serif;
   width: 100%;
-  background: #101010;
+  background: #000000;
   color:white;
 }
 
@@ -26,7 +26,7 @@
 .App nav .button{
   font-family: 'NewFont', sans-serif;
   color:white;
-  background: #101010;
+  background: #000000;
   padding:10px 15px;
   border:1px solid gray;
   border-radius: 5px;
@@ -37,10 +37,21 @@
 }
 
 .App nav .button:hover{
-  color:#101010;
+  color:#000000;
   background: white;
   transition: all 0.2s ease;
   transform: scale(1.05);
+}
+
+.App .whole{
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+}
+
+.App .whole .blur{
+  height: calc(100vh - 70px);
+  z-index: -1;
 }
 
 .App .content{
@@ -69,7 +80,7 @@
   font-family: 'NewFont', sans-serif;
   font-size: 18px;
   max-width: 200px;
-  color:#101010;
+  color:#000000;
   line-height: 140%;
   padding: 10px 15px;
   border-radius: 5px;
@@ -80,7 +91,7 @@
 
 .App .content .button:hover{
   color:white;
-  background: #101010;
+  background: #000000;
   transition: all 0.2s ease;
   transform: scale(1.05);
 }
