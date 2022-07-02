@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <nav>
         <img className="logo" src={Logo} alt="Logo" />
-        <button className="button">Get Started</button>
+        <a href="https://arjun-ms-falcon-hack-at-arch-main-sufw91.streamlitapp.com/"><button className="button">Get Started</button></a>
       </nav>
 
       <div className="whole">
@@ -22,7 +22,7 @@ function App() {
             <br />
             the ultimate pothole detector. Reduce Potholes, reduce accidents.
           </p>
-          <button className="button">Try now</button>
+          <a href="https://arjun-ms-falcon-hack-at-arch-main-sufw91.streamlitapp.com/"><button className="button">Try now</button></a>
         </div>
 
         <div className="image">
