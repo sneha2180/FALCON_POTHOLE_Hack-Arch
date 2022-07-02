@@ -32,6 +32,8 @@
 
 .App nav .logo{
   height: 60px;
+  filter: invert();
+  padding: 10px;
 }
 
 .App nav .button{

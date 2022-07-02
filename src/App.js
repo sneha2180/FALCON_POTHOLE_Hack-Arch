@@ -1,5 +1,5 @@
 import "./App.css";
-import Logo from "./assets/images/logo.png";
+import Logo from "./assets/images/logo2.png";
 import Blur from './assets/images/sphere.gif'
 
 function App() {
